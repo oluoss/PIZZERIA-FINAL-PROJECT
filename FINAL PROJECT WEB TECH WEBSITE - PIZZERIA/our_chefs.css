@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    /* background-color: black; */
+    font-family: 'Poppins', sans-serif;
+}
+
+li,a,button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size:16px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: rgb(27, 27, 27);
+    /* position:relative; */
+    /* DONT FORGET TO REMOVE */
+}
+
+.logo{cursor: pointer;  }
+
+.nav-links{list-style: none;}
+.nav-links li {
+    display: inline-block;
+    padding: 0px 25px;
+}
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav-links li a:hover {
+    color: #e4c590;
+}
+button {
+    padding: 9px 25px;
+    background-color: rgb(	228,	197,	144);
+    border: none;
+    border-radius: 75px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color:black;
+}
+button:hover {
+    background-color: rgb(255, 255, 255);
+    color: #e4c590;
+}
+
+
+.team{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+  /* background: url('images/pexels-rene-strgar-13946695.jpg'); */
+  background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.team-content{
+	width: 100%;
+	max-width: 1350px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+	align-items: center;
+	gap: 2rem;
+	text-align: center;
+	margin-top: 4rem;
+}
+.team-content img{
+	width: 100%;
+	height: auto;
+	border-radius: 15px;
+	margin-bottom: 15px;
+}
+.center h1{
+	color: #fff;
+	font-size: 4rem;
+	text-align: center;
+  font-family: 'Aboreto';;
+}
+.box{
+	padding: 16px;
+	background: #1c1c1c;
+	border-radius: 15px;
+	transition: all .38s ease;
+}
+.box h3{
+	font-size: 23px;
+	font-weight: 600;
+	color: #fff;
+	margin-bottom: 8px;
+}
+.box h5{
+	font-size: 15px;
+	font-weight: 600;
+	color: #b7b4bb;
+	margin-bottom: 15px;
+	letter-spacing: 2px;
+}
+.icons i{
+	display: inline-block;
+	color: #fff;
+	font-size: 20px;
+	margin: 0 8px;
+	transition: all .38s ease;
+}
+.icons i:hover{
+	transform: scale(1.2);
+}
+.box:hover{
+	transform: translateY(-10px);
+	cursor: pointer;
+}
+
+@media(max-width: 1240px){
+	.team{
+		width: 100%;
+		height: auto;
+		padding: 90px 2%;
+	}
+	.center h1{
+		font-size: 3.2rem;
+	}
+}

@@ -1,0 +1,155 @@
+/* NAVBAR */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+
+
+}
+
+li,a,button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size:16px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color:  rgb(27, 27, 27);
+   
+}
+
+.logo{cursor: pointer;  }
+
+.nav-links{list-style: none;}
+.nav-links li {
+    display: inline-block;
+    padding: 0px 25px;
+}
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav-links li a:hover {
+    color: #e4c590;
+}
+button {
+    padding: 9px 25px;
+    background-color: rgb(	228,	197,	144);
+    border: none;
+    border-radius: 75px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color:black;
+}
+button:hover {
+    background-color: rgb(255, 255, 255);
+    color: #e4c590;
+}
+
+::placeholder{
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+ 
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(\FINAL PROJECT WEB TECH WEBSITE - PIZZERIA\images\pexels-edward-eyer-1049626.jpg); */
+    background-position: center;
+    background-size: cover;
+    position:relative;
+    background-image: url('images/pexels-pixabay-315755.jpg');
+}
+
+.back {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  
+}
+.form-box {
+    width:90%;
+    max-width: 450px;
+    position: absolute;
+    bottom: 50%;
+    left:50%;
+    transform: translate(-50%,50%);
+    background: white;
+    padding: 50px 60px 55px;
+    text-align: center;
+
+}
+.form-box h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    /* font-family: ; */
+    position: relative;
+}
+
+.form-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #3c00c0;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);   
+}
+
+
+.input-field {
+    background: rgba(0, 0, 0, 0.197);
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+
+.input-field i {
+    margin-left: 15px;
+    color: #999;
+
+}
+
+.btn-field button {
+    flex-basis: 48%;
+    padding: 9px 25px;
+    background-color: rgb(	228,	197,	144);
+    border: none;
+    border-radius: 75px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color:black;
+
+}
+.btn-field button.disable {
+    background: rgb(185, 185, 185);
+    color: black;
+}
+
+h1 {
+    font-family: Montserrat;
+}
+

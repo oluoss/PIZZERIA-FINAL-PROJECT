@@ -1,0 +1,127 @@
+/* NAVBAR */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    /* background-color: black; */
+}
+
+li,a,button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size:16px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: rgb(27, 27, 27);
+    /* position:relative; */
+    /* DONT FORGET TO REMOVE */
+}
+
+.logo{cursor: pointer;  }
+
+.nav-links{list-style: none;}
+.nav-links li {
+    display: inline-block;
+    padding: 0px 25px;
+}
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav-links li a:hover {
+    color: #e4c590;
+}
+button {
+    padding: 9px 25px;
+    background-color: rgb(	228,	197,	144);
+    border: none;
+    border-radius: 75px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color:black;
+}
+button:hover {
+    background-color: rgb(255, 255, 255);
+    color: #e4c590;
+}
+
+
+
+/* SLIDER PART */
+
+/* .slider h1, p{
+  color: black;
+} */
+.slide1 {
+    background: url('../FINAL\ PROJECT\ WEB\ TECH\ WEBSITE\ -\ PIZZERIA/images/pexels-edward-eyer-1049626.jpg');
+}
+.slide2 {
+    background-image: url('images/pexels-pixabay-315755.jpg');
+}
+.slide3 {
+    background-image: url('images/pexels-rene-strgar-13946695.jpg');
+}
+
+
+.slide{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.caption {
+    /* background: rgba(0,0,0.03); */
+    width:100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.caption h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 50px;
+    padding: 10px;
+    font-family: 'Aboreto';
+}
+.caption p{
+    max-width: 600px;
+    width:90%;
+    margin: 0px auto;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.arrow {
+    position: absolute;
+    top: 65%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 200;
+    border-radius: 60%;
+    transform: background 500ms;
+
+}
+.arrow img{
+    width: 60px;
+}
+.arrow:hover {
+    background:  rgb(228, 197, 144);
+}
+
+.l{ left:0;}
+.r{right:0;}

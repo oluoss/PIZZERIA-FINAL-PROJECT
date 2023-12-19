@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+ 
+}
+
+li,a,button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size:16px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: rgb(27, 27, 27);
+   
+}
+
+.logo{cursor: pointer;  }
+
+.nav-links{list-style: none;}
+.nav-links li {
+    display: inline-block;
+    padding: 0px 25px;
+}
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav-links li a:hover {
+    color: #e4c590;
+}
+button {
+    padding: 9px 25px;
+    background-color: rgb(	228,	197,	144);
+    border: none;
+    border-radius: 75px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color:black;
+}
+button:hover {
+    background-color: rgb(255, 255, 255);
+    color: #e4c590;
+}
+
